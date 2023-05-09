@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 6px;
+
+}
+
+.h2{
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: #35858B;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 50px;
+    text-align: center;
+    height: 650px;
+    width: 500px;
+    background-color: #F0F0CB;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 0px #FCF8E8;
+}
+
+
+.food {
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+.foodBtn {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #DAD5AB;
+    transition: all 1s linear;
+
+}
+
+.foodBtn:hover {
+    border-radius: 10px;
+    border: 2px solid #35858B;
+}
+
+
+.card {
+    margin: auto;
+    height: 250px;
+    width: 400px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.foodImg {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 20px;
+}
+
+.front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.container {
+    perspective: 1000px;
+}
